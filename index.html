@@ -30,6 +30,7 @@
                         <i class="fas fa-circle-question mx-1"></i>
                         <i class="fa-solid fa-ellipsis-vertical mx-1"></i>
                     </div>
+                    <!-- DROPDOWN -->
                     <div class="dropdown d-inline">
                         <i class="fa-solid fa-bell text-warning" data-bs-toggle="dropdown" aria-expanded="false">
                         
@@ -45,35 +46,53 @@
             </div>
         </div>
     </header>
-    <main>
-        <aside class="d-flex flex-column justify-content-between align-items-center">
-            <div>    
-                <div>
-                    <button type="button" class="btn text-white bg-transparent">
-                        <i class="fa-solid fa-house"></i> <span class=" ms-3 d-none d-lg-inline">Home</span>
-                    </button>
+        <div class="ms-container d-flex">  
+            <aside class="d-flex flex-column justify-content-between align-items-center">
+                <div>    
+                    <div>
+                        <button type="button" class="btn text-white bg-transparent">
+                            <i class="fa-solid fa-house"></i> <span class=" ms-3 d-none d-lg-inline">Home</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn text-white bg-transparent">
+                            <i class="fa-solid fa-chart-simple"></i> <span class=" ms-3 d-none d-lg-inline">Stats</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn text-white bg-transparent">
+                            <i class="fa-solid fa-signal"></i> <span class=" ms-3 d-none d-lg-inline">Signal</span>
+                        </button>
+                    </div>
                 </div>
                 <div>
-                    <button type="button" class="btn text-white bg-transparent">
-                        <i class="fa-solid fa-chart-simple"></i> <span class=" ms-3 d-none d-lg-inline">Stats</span>
-                    </button>
+                    <div>
+                        <button type="button" class="btn text-white bg-transparent">
+                            <i class="fa-solid fa-gear"></i> <span class=" ms-3 d-none d-lg-inline">Admin</span>
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <button type="button" class="btn text-white bg-transparent">
-                        <i class="fa-solid fa-signal"></i> <span class=" ms-3 d-none d-lg-inline">Signal</span>
-                    </button>
+            </aside>
+            <main >
+                <div class="container-fluid">
+                    <div class="row bg-primary text-white bg-primary fw-semibold">
+                        <div class="col-12 col-md-4 my-1 p-2 order-md-3">
+                            <span>Nuovo studente</span> <button type="button" class="btn btn-outline-light ms-2"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div class="col-12 col-md-4 my-1 p-2 order-md-1">
+                            <span class="fs-2">Boolean</span><span class="badge rounded-pill ms-bg-text-pill ms-2">Piano blaze</span>
+                            <div><span class="badge rounded-pill ms-bg-text-pill">3 app</span> <i class="fa-solid fa-angles-right"></i> <span class="badge rounded-pill ms-bg-text-pill">+</span></div>
+                        </div>
+                        <div class="col-12 col-md-4 my-1 p-2 order-md-2">
+                            Studenti online negli ultimi 30 minuti
+                            <div class="fs-2">125</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <button type="button" class="btn text-white bg-transparent">
-                        <i class="fa-solid fa-gear"></i> <span class=" ms-3 d-none d-lg-inline">Admin</span>
-                    </button>
-                </div>
-            </div>
-        </aside>
-
-    </main>
+            </main>
+            
+        </div>
+    
     <!-- BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

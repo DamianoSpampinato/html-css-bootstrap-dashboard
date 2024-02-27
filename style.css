@@ -18,13 +18,26 @@ input[type="search"]{
     border:none;
 }
 
+.ms-container{
+    height: calc(100vh - 4.375rem);
+}
+
+main{
+    width: 100%;
+}
+
+
 aside{
     width: calc(60px + 24px + 12px);
     background-image: url('img/sidebar-bg.png');
-    height: calc(100vh - 4.375rem);
     background-color: #051e34;
+    height: 100%;
+    flex-shrink: 0;
 }
-
+.ms-bg-text-pill{
+    background-color: #165bba;
+    color: #fff;
+}
 @media screen and (min-width:992px) {
 
    header .img-container {
