@@ -1,0 +1,24 @@
+header{
+    height: 4.375rem;
+}
+
+.img-container{
+    width: 60px;
+}
+.img-container > img{
+    width: 100%;
+}
+
+.ms-bg-grey{
+    background-color: #e5e5e5;
+}
+
+input[type="search"]{
+    width: 100%;
+    border:none;
+}
+
+aside{
+    width: 4.25rem;
+}
+
