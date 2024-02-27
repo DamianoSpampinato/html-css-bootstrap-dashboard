@@ -2,10 +2,10 @@ header{
     height: 4.375rem;
 }
 
-.img-container{
+header .img-container{
     width: 60px;
 }
-.img-container > img{
+header .img-container > img{
     width: 100%;
 }
 
@@ -22,3 +22,9 @@ aside{
     width: 4.25rem;
 }
 
+@media screen and (min-width:992px) {
+
+   header .img-container {
+    width: 150px;
+   }
+}
