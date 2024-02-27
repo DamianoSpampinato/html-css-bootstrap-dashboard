@@ -18,11 +18,19 @@ input[type="search"]{
     border:none;
 }
 
-
+aside{
+    width: calc(60px + 24px + 12px);
+    background-image: url('img/sidebar-bg.png');
+    height: calc(100vh - 4.375rem);
+    background-color: #051e34;
+}
 
 @media screen and (min-width:992px) {
 
    header .img-container {
     width: 150px;
+   }
+   aside{
+    width:  calc(150px + 24px + 12px);
    }
 }
