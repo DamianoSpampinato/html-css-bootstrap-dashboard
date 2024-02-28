@@ -73,12 +73,109 @@
                 </div>
             </aside>
             <main >
-                <div class="container-fluid">
+                <div class="container-fluid overflow-y-auto h-100">
                     <div class="row bg-primary text-white bg-primary fw-semibold">
-                        <div class="col-12 col-md-4 col-lg-2 my-1 p-2 order-md-3">
-                            <span>Nuovo studente</span> <button type="button" class="btn btn-outline-light ms-2"><i class="fa-solid fa-plus"></i></button>
+                        <div class="col-12 col-md-4 col-lg-2 my-1 p-3 order-md-3">
+                            <span>Nuovo studente</span>
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                            
+                            <!--Offcanvas-->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form action="">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                <label for="name">Name</label>
+                                                <input id="name" type="text" class="form-control"  aria-label="First name">
+                                                </div>
+                                                <div class="col-6">
+                                                <label for="lastname">Lastname</label>
+                                                <input id="lastname" type="text" class="form-control" aria-label="Last name">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-6 input-group-test">
+                                                    <label for="email">Email</label>
+                                                    <div class="d-flex border rounded-2">
+                                                        <span class="input-group-text border-0 rounded-0 rounded-start">@</span>
+                                                    <input id="email" type="email" class="form-control border-0 " aria-label="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="password">Password</label>
+                                                    <input id="password" type="password" class="form-control" aria-label="password">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3 ">
+                                                <div class="col-12 col-lg-6 input-group-test">
+                                                    <label for="i-email">Indirizzo email</label>
+                                                    <div class="d-flex border rounded-2">
+                                                        <span class="input-group-text border-0 rounded-0 rounded-start">@</span>
+                                                    <input id="i-email" type="email" class="form-control border-0 " aria-label="i-email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <label for="password2">Password</label>
+                                                    <input id="password2" type="password" class="form-control" aria-label="password">
+                                                </div>
+                                            </div>
+                                            <div class="rom mt-3">
+                                                <div class="col-12">
+                                                    <label for="address">Indirizzo</label>
+                                                    <input id="address" type="text" class="form-control" id="inputAddress">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-12 col-lg-6 ">
+                                                    <label for="city">Città</label>
+                                                    <input id="city" type="text" class="form-control" id="inputCity">
+                                                  </div>
+                                                  <div class="col-12 my-2 my-lg-0 col-lg-4">
+                                                    <label for="state">Stato</label>
+                                                    <select id="state" class="form-select">
+                                                      <option selected>Choose...</option>
+                                                      <option>...</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col-12 col-lg-2">
+                                                    <label for="zip">Cap</label>
+                                                    <input id="Cap" type="text" class="form-control" id="inputZip">
+                                                  </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-12">
+                                                    <label for="file">Scegli file</label>
+                                                    <input id="file" class="form-control" type="file">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          seleziona per proseguire
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-primary">Salva</button>
+                                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /OFFCANVAS -->
                         </div>
-                        <div class="col-12 col-md-4 col-lg-7 my-1 p-2 order-md-1">
+                        <div class="col-12 col-md-4 col-lg-7 my-1 p-3 order-md-1">
                             <span class="fs-2">Boolean</span><span class="badge rounded-pill ms-bg-text-pill ms-2">Piano blaze</span>
                             <div>
                                 <span class="badge rounded-pill ms-bg-text-pill">3 app</span>
@@ -89,12 +186,211 @@
                                  <span class="badge rounded-pill ms-bg-text-pill d-none d-lg-inline">Boolean blog app</span>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-3 my-1 p-2 order-md-2">
+                        <div class="col-12 col-md-4 col-lg-3 my-1 p-3 order-md-2">
                             Studenti online negli ultimi 30 minuti
                             <div class="fs-2">125</div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header fs-4">
+                                    Prossime classi
+                                </div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th class="w-50">Name</th>
+                                            <th class="text-center">Data inizio</th>
+                                            <th class="text-center">ROI</th>
+                                            <th class="text-center">Stato</th>
+                                            <th class="text-center">Azioni</th>
+                                        </tr>
+                                        </thead>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 76
+                                            </td>
+                                            <td class="text-center">
+                                                15 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 77
+                                            </td>
+                                            <td class="text-center">
+                                                16 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 78
+                                            </td>
+                                            <td class="text-center">
+                                                17 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-warning">Process</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 79
+                                            </td>
+                                            <td class="text-center">
+                                                18 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 80
+                                            </td>
+                                            <td class="text-center">
+                                                19 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-danger">Failed</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 81
+                                            </td>
+                                            <td class="text-center">
+                                                20 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 82
+                                            </td>
+                                            <td class="text-center">
+                                                21 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-danger">Failed</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" d-flex gap-2 align-items-center">
+                                                    <div class="table-img-container rounded-circle overflow-hidden">
+                                                        <img src="img/class-avatar.jpg" alt="">
+                                                    </div>
+                                                Classe 83
+                                            </td>
+                                            <td class="text-center">
+                                                22 Feb 2021
+                                            </td>
+                                            <td class="text-center">
+                                                20%
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary ms-button-fs"><i class="fa-solid fa-trash"></i></button>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
                 </div>
+                
             </main>
             
         </div>
