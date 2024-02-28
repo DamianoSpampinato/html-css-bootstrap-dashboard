@@ -1,5 +1,10 @@
 header{
     height: 4.375rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #f8f9fa;
 }
 
 header .img-container{
