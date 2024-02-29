@@ -80,4 +80,7 @@ aside{
    .offcanvas.offcanvas-end{
     width: 40%;
     }
+    .ms-lg-name{
+        width: 70%;
+    }
 }
