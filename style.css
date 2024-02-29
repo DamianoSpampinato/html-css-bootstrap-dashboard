@@ -46,6 +46,7 @@ main{
 }
 
 
+
 aside{
     width: calc(60px + 24px + 12px);
     background-image: url('img/sidebar-bg.png');
