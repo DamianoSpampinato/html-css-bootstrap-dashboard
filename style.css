@@ -63,6 +63,17 @@ aside{
     color: #fff;
 }
 
+.ms-background-hover{
+    background-color: none;
+    transition: 0.3s;
+    
+}
+
+.ms-background-hover:hover{
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+
 @media screen and (min-width:768px) {
     
     .offcanvas.offcanvas-end{
